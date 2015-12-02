@@ -80,7 +80,7 @@ function scrollEvents(st){
 	var welcome = $('.welcome');
 	var $player = $('#video')[0];
 
-	header.css('top', st);
+	//header.css('top', st);
 
 	if ( st > 1 ){
 		header.addClass('fixed');
@@ -98,8 +98,14 @@ function scrollEvents(st){
 	}
 
 	if ( st < 600 ){
-		welcome.css('top', st)
+		welcome.css({
+			'position':'fixed',
+			'top': '0'
+		})
 	} else {
-		welcome.css('top', 600)
+		welcome.css({
+			'position':'absolute',
+			'top': 600
+		})
 	};
 }

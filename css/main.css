@@ -106,6 +106,7 @@ section{
 .header.fixed {
 	background-color: #fff;
 	height: 87px;
+	position: fixed;
 }
 .header.fixed .logo{
 	margin-top: 7px;
