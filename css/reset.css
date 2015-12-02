@@ -1,0 +1,121 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, textarea, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	}
+
+html, body {
+	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none!important;
+	-ms-text-size-adjust: none;
+	-ms-text-size-adjust: none!important;
+	text-size-adjust: none;
+	text-size-adjust: none!important;
+
+	}	
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, main, section, summary {
+	display: block;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+
+blockquote, q {
+	quotes: none;
+	}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+	}
+
+
+* {outline:none;}
+
+input::-webkit-search-cancel-button {display: none;} 	/*убираем кнопку очищения формы в WebKit браузерах*/
+label {											   	/*запрет выделения при клике на тег <label>. */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+	font: inherit;
+	}
+
+.clearfix:after, .clearfix:before{
+	content:'';
+	display:table;
+	clear:both;
+	}
+
+a:hover {
+	text-decoration:underline;
+	color:inherit;
+	/*font: inherit;*/
+	}
+
+
+.btn-wrap{text-align: center;}
+.btn{
+	font-weight: 500;
+	display: inline-block;
+	text-decoration: none!important;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn .btn-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.btn_circle .btn-bg{
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	border: 2px solid #cf852b;
+}
+.btn_circle .btn-text{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 35px;
+	color: inherit;
+	position: relative;
+}
+.btn_solid .btn-bg{
+	background-color: #cf852b;
+	color: #fff;
+}
